@@ -7,7 +7,7 @@ module RecordsManipulator
 
     module ClassMethods
       def manipulate(&block)
-        relation.manipulate(&block)
+        where('').manipulate(&block)
       end
     end
 
